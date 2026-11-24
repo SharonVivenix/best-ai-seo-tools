@@ -1,0 +1,148 @@
+# One entry per tool. render_table.py builds the README table from this file.
+#
+# layers: which of the five stack layers the tool covers.
+#   fetch    can an AI crawler read the page text from the first HTML response
+#   markup   schema, FAQ markup and llms.txt
+#   measure  mentions, citations and rank across AI engines and classic search
+#   create   drafting and refreshing content
+#   data     first party search data
+#
+# price is the monthly entry price as a number, or 0 for a free product.
+# Facts come from the AIclicks roundup at
+# https://aiclicks.io/blog/best-ai-seo-tools (updated 17 November 2026) and
+# from AIclicks plan facts. Vendors change plans often, so confirm before you buy.
+
+- id: aiclicks
+  name: AIclicks
+  url: https://aiclicks.io/
+  layers: [measure, create]
+  currency: "$"
+  price: 59
+  price_note: 3 day trial, card required
+  coverage: ChatGPT, Perplexity, Claude, Gemini, AI Overviews, AI Mode, Grok and Copilot, 3 of them on Starter
+  dev: CSV export on every plan, Google Analytics on Pro, private API on Business
+  watch: Not a technical audit tool, and Google Analytics is the only third party integration so far
+
+- id: semrush
+  name: Semrush
+  url: https://www.semrush.com/
+  layers: [measure]
+  currency: "$"
+  price: 139.95
+  price_note: free trial
+  coverage: AI visibility score across ChatGPT and Google, with prompt level and sentiment views
+  dev: Site audit, keyword research and backlinks in the same account, white label AI reports
+  watch: Wide feature set that takes a while to learn
+
+- id: ahrefs
+  name: Ahrefs
+  url: https://ahrefs.com/brand-radar
+  layers: [measure]
+  currency: "$"
+  price: 29
+  price_note: Starter plan
+  coverage: Brand Radar shows prompts that mention you, cited URLs and sentiment against competitors
+  dev: Backlink and SERP data, API v3 access depends on plan
+  watch: Light on AI specific recommendations
+
+- id: surfer
+  name: Surfer SEO
+  url: https://surferseo.com/ai-tracker/
+  layers: [measure, create]
+  currency: "$"
+  price: 59
+  coverage: AI Tracker across ChatGPT, Gemini and Perplexity, with alerts when visibility drops
+  dev: Content editor, keyword clustering, Google Docs and WordPress integrations
+  watch: Thin on technical SEO and on AI visibility depth
+
+- id: seranking
+  name: SE Ranking
+  url: https://seranking.com/
+  layers: [measure]
+  currency: "$"
+  price: 129
+  coverage: AI Visibility Tracker for ChatGPT, Gemini, Perplexity and Google AI Overviews, with competitor benchmarks
+  dev: White label reports
+  watch: Broad suite, less specialized than a dedicated AI visibility tool
+
+- id: writesonic
+  name: Writesonic
+  url: https://writesonic.com/
+  layers: [measure, create]
+  currency: "$"
+  price: 99
+  price_note: free trial
+  coverage: Share of voice and content gaps, only 3 AI platforms on the three lower plans
+  dev: AI agents that refresh outdated pages
+  watch: Wider engine coverage needs the Enterprise plan
+
+- id: rankprompt
+  name: Rank Prompt
+  url: https://www.rankprompt.com/
+  layers: [measure, create]
+  currency: "$"
+  price: 49
+  price_note: a free plan is also listed
+  coverage: Six AI engines on every plan, including Claude and Grok, with multi location tracking
+  dev: Free plan with API and MCP access, articles publish straight to WordPress
+  watch: Monthly credits do not roll over, white label reports start at the Agency plan
+
+- id: aiso
+  name: Aiso
+  url: https://getaiso.com/
+  layers: [measure, fetch, markup]
+  currency: "$"
+  price: 19
+  coverage: Panel of 10M+ consented human and AI conversations across ChatGPT, Claude, Perplexity, Gemini and Copilot
+  dev: Crawlability audits and schema fixes
+  watch: Several modules are still marked coming soon on some plans
+
+- id: nightwatch
+  name: Nightwatch
+  url: https://nightwatch.io/
+  layers: [measure]
+  currency: "€"
+  price: 99
+  coverage: Google, Bing and YouTube plus ChatGPT, Claude and Gemini, down to zip code level
+  dev: Tracks AI Overviews, featured snippets and local packs, customizable reports
+  watch: Built for tracking, not for fixing what it finds
+
+- id: searchatlas
+  name: Search Atlas
+  url: https://www.searchatlas.com/
+  layers: [markup, create]
+  currency: "$"
+  price: 99
+  coverage: OTTO AI assistant runs audits, fixes technical issues and pushes changes live
+  dev: Automated schema fixes and content generation
+  watch: Highest cost of the group for what you use, best fit for agencies
+
+- id: alli
+  name: Alli AI
+  url: https://www.alli.ai/
+  layers: [fetch, markup]
+  currency: "$"
+  price: 299
+  coverage: AI Search Visibility Engine serves static HTML so AI crawlers can read React, Vue and Angular sites
+  dev: Live Editor for site changes without a developer, AI Schema and Internal Linking modules
+  watch: Narrow focus, not a content tool
+
+- id: storerank
+  name: StoreRank.ai
+  url: https://www.storerank.ai/
+  layers: [markup, measure]
+  currency: "$"
+  price: 29
+  coverage: Tracks ChatGPT, Claude, Perplexity and Gemini and ties visibility to traffic, orders and revenue
+  dev: AI optimized schema markup, FAQ generation from People Also Ask data, llms.txt management
+  watch: Ecommerce only
+
+- id: gsc
+  name: Google Search Console
+  url: https://search.google.com/search-console/about
+  layers: [data]
+  currency: "$"
+  price: 0
+  coverage: First party impressions, clicks, indexing and site health
+  dev: Search Console API for automation
+  watch: No AI visibility tracking and no content creation

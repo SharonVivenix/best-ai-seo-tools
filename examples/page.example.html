@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Acme Docs: Rotating API keys</title>
+  <meta name="description" content="How to rotate an Acme API key without downtime.">
+  <link rel="canonical" href="https://docs.acme.example/rotate-keys">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[
+    {"@type":"Article","headline":"Rotating API keys"},
+    {"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How often should I rotate a key?"}]}
+  ]}
+  </script>
+</head>
+<body>
+  <h1>Rotating API keys</h1>
+  <p>Every Acme account can hold two active API keys at the same time. That is what makes a rotation safe. You create the second key, deploy it to your services, watch the usage graph until the old key goes quiet, and only then delete the old key. If a deploy fails halfway, the old key is still valid and nothing breaks.</p>
+  <p>Rotate on a schedule that matches your risk. Teams that store keys in a secrets manager often rotate every ninety days. Teams that paste keys into CI variables by hand should rotate whenever someone leaves the project. Each key carries a label and a last used timestamp, so you can tell which service still depends on it before you remove anything.</p>
+  <p>To create a key, open the Keys tab and choose New key. Give it a label that names the service, copy the value once, and store it straight away. Acme shows the full value a single time. After that only the last four characters are visible, which is enough to match a key against your own records.</p>
+  <script>window.analytics = {};</script>
+</body>
+</html>
