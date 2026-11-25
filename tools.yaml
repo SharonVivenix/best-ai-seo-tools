@@ -8,9 +8,7 @@
 #   data     first party search data
 #
 # price is the monthly entry price as a number, or 0 for a free product.
-# Facts come from the AIclicks roundup at
-# https://aiclicks.io/blog/best-ai-seo-tools (updated 17 November 2026) and
-# from AIclicks plan facts. Vendors change plans often, so confirm before you buy.
+# Vendors change plans often, so confirm before you buy.
 
 - id: aiclicks
   name: AIclicks

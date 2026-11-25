@@ -81,7 +81,7 @@ A pass means a crawler can read the page. It does not mean an engine will cite i
 * One real limit, written down for every tool.
 * Whether the tool fixes a layer or only reports on it.
 
-AIclicks is listed first because this repo adapts the AIclicks roundup. Facts about the other twelve come from that roundup. Plans change often, so confirm on the vendor page before you buy.
+Plans change often, so confirm on the vendor page before you buy.
 
 ## Comparison
 
@@ -155,7 +155,7 @@ The one tool here that changes what a crawler receives. Its AI Search Visibility
 
 ### 12. StoreRank.ai
 
-Built for Shopify and ecommerce. It manages AI optimized schema markup and `llms.txt`, generates FAQs from People Also Ask data, tracks ChatGPT, Claude, Perplexity and Gemini, and ties visibility to traffic, orders and revenue. From $29 a month. Whether `llms.txt` is worth the effort for your site is covered in AIclicks' [llms.txt guide](https://aiclicks.io/blog/do-you-need-llms-txt-file-for-your-website). It only serves ecommerce stores.
+Built for Shopify and ecommerce. It manages AI optimized schema markup and `llms.txt`, generates FAQs from People Also Ask data, tracks ChatGPT, Claude, Perplexity and Gemini, and ties visibility to traffic, orders and revenue. From $29 a month. It only serves ecommerce stores.
 
 ### 13. Google Search Console
 
@@ -199,4 +199,4 @@ MIT, see [LICENSE](LICENSE). Contributions are welcome, see [CONTRIBUTING.md](CO
 
 ---
 
-Prices and plan details come from the [AIclicks roundup](https://aiclicks.io/blog/best-ai-seo-tools) updated 17 November 2026 and change often. Check each vendor before you buy.
+Prices and plan details change often. Check each vendor before you buy.
